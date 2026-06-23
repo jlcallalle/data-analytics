@@ -12,3 +12,12 @@ C:\Users\JORGE\AppData\Local\Microsoft\WindowsApps\python.exe
 
 $ where py
 C:\Windows\py.exe
+
+
+/* Clase 6 - 22/06/2026 */
+Va dejar ejercicios para evaluar participacion
+Preguntas como: #preguntas, como se filtrar x filas o por columnas
+
+Libreria gráficas:
+py -m pip install pandas matplotlib
+py -m pip list
