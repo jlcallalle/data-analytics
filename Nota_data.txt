@@ -1,2 +1,14 @@
 Notas de Sesiones
 ==================
+
+1) Instalar pandas 
+py -m pip install pandas matplotlib
+
+2) listar
+py -m pip list
+
+$ where python
+C:\Users\JORGE\AppData\Local\Microsoft\WindowsApps\python.exe
+
+$ where py
+C:\Windows\py.exe
