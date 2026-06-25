@@ -21,3 +21,8 @@ Preguntas como: #preguntas, como se filtrar x filas o por columnas
 Libreria gráficas:
 py -m pip install pandas matplotlib
 py -m pip list
+
+
+/* 24/06/2026 */
+
+py -m pip install pandas matplotlib seaborn
