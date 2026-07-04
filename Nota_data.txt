@@ -26,3 +26,27 @@ py -m pip list
 /* 24/06/2026 */
 
 py -m pip install pandas matplotlib seaborn
+
+py -m pip install pingouin
+
+
+/* 03/07/2026*/
+Aplicacion de expresiones regulares:
+
+import re
+
+def procesamiento_texto(texto):
+  texto = texto.lower()
+  texto = re.sub(r'[-]', '', texto)
+  texto = re.sub(r'á', 'a', texto)
+  texto = re.sub(r'é', 'e', texto)
+  texto = re.sub(r'í', 'i', texto)
+  texto = re.sub(r'ó', 'o', texto)
+  texto = re.sub(r'ú', 'u', texto)
+  texto = re.sub(r'ï', 'i', texto)
+  texto = re.sub(r'ü', 'u', texto)
+  return texto
+
+sub = buscar un patron y cambio por el texto que estoy indicando
+
+El objetivo es estandarizar las palabras:
