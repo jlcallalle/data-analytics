@@ -55,7 +55,7 @@ print(dataset_pronabec.TEXTO[0])
 import re
 
 def procesamiento_texto(texto):
-    # Convertir a minúsculas
+    texto = str(texto)
     texto = texto.lower()
 
     # Eliminar guiones
