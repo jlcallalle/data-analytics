@@ -31,6 +31,7 @@ py -m pip install pingouin
 
 
 /* 03/07/2026*/
+El objetivo, es que se puede eliminar caracteres.
 Aplicacion de expresiones regulares:
 
 import re
@@ -50,3 +51,53 @@ def procesamiento_texto(texto):
 sub = buscar un patron y cambio por el texto que estoy indicando
 
 El objetivo es estandarizar las palabras:
+
+------------------
+
+Tokenización (Tokenization), uno de los pasos más importantes del Procesamiento de Lenguaje Natural (NLP). Es el proceso inicial para convertir un texto en partes más pequeñas que una computadora puede analizar.
+
+Identificar la unidad mínima de analicis, 1 palabra, 2 palabras seguidas o sentencias, para que luego sea usados para los siguientes pasos siguienes. por ejem Modelos de clasificación de alguna categoría especfífica.
+
+
+Antes, se enfocaba si un texto, se refería a un tema de machismo o violencia, esas categorias se podria predecir.
+
+CASOS DE USO 
+==================
+
+
+Flujo completo de un proyecto de NLP
+
+Comentarios de redes sociales
+            │
+            ▼
+   Limpieza del texto
+(minúsculas, quitar tildes, emojis, etc.)
+            │
+            ▼
+      Tokenización
+            │
+            ▼
+ Eliminar stopwords
+(de, la, el, que...)
+            │
+            ▼
+Stemming o Lematización
+            │
+            ▼
+ Representación del texto
+(TF-IDF, Bag of Words, Embeddings)
+            │
+            ▼
+ Machine Learning o IA
+            │
+            ▼
+Resultados:
+• Sentimiento
+• Temas frecuentes
+• Clasificación
+• Recomendaciones
+
+
+
+Cuando se trata de analisas, reducir diccionario de bolsa de palabras. 
+Poor eso el entendimiento sirve como parte probablemente para los LLMS
