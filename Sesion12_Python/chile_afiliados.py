@@ -141,3 +141,50 @@ print("=" * 60)
 print("Análisis de valores nulos")
 print("=" * 60)
 print(null_info_sorted)
+
+
+
+
+
+# =====================================
+# Ingeniería de características (Feature Engineering)
+# =====================================
+
+from datetime import datetime
+
+# Obtener el año actual
+current_year = datetime.now().year
+
+# Crear la variable edad
+dataset_afiliados_consolidado_chile["edad"] = (
+    current_year
+    - dataset_afiliados_consolidado_chile["fecha_nac"]
+)
+
+print("=" * 60)
+print("Nueva variable: edad")
+print("=" * 60)
+print(
+    dataset_afiliados_consolidado_chile[
+        ["fecha_nac", "edad"]
+    ].head()
+)
+
+
+# Tipo de cambio aproximado (CLP -> PEN)
+exchange_rate_clp_to_pen = 0.004
+
+# Crear la variable remuneración en soles
+dataset_afiliados_consolidado_chile["rem_sol"] = (
+    dataset_afiliados_consolidado_chile["rem_imp"]
+    * exchange_rate_clp_to_pen
+)
+
+print("\n" + "=" * 60)
+print("Nueva variable: rem_sol")
+print("=" * 60)
+print(
+    dataset_afiliados_consolidado_chile[
+        ["rem_imp", "rem_sol"]
+    ].head()
+)
