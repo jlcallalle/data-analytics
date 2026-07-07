@@ -188,3 +188,56 @@ print(
         ["rem_imp", "rem_sol"]
     ].head()
 )
+
+
+# =====================================
+# EDA - Exploración de Datos
+# =====================================
+
+print("=" * 60)
+print("Columnas del dataset")
+print("=" * 60)
+print(dataset_afiliados_consolidado_chile.columns)
+
+print("\n" + "=" * 60)
+print("Estadísticas descriptivas de variables numéricas")
+print("=" * 60)
+
+estadisticas = dataset_afiliados_consolidado_chile.filter([
+    "num_mes_cot",
+    "saldoA_pesos",
+    "saldoB_pesos",
+    "saldoC_pesos",
+    "saldoD_pesos",
+    "saldoE_pesos",
+    "edad",
+    "rem_sol"
+]).describe()
+
+print(estadisticas)
+
+
+
+# =====================================
+# EDA - Análisis Univariado
+# Distribución de la edad
+# =====================================
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.figure(figsize=(10, 6))
+
+sns.histplot(
+    data=dataset_afiliados_consolidado_chile,
+    x="edad",
+    kde=True,
+    bins=30
+)
+
+plt.title("Distribución de la Edad de los Afiliados")
+plt.xlabel("Edad")
+plt.ylabel("Frecuencia")
+plt.grid(axis="y", alpha=0.75)
+
+plt.show()
