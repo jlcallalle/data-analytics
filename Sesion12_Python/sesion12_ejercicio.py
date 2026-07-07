@@ -345,3 +345,141 @@ print("Primeras 5 filas de la matriz Bag of Words")
 print("=" * 60)
 
 print(matriz_bow.head())
+
+
+
+# =====================================
+# Word Embeddings - Word2Vec   06/07/2026
+# =====================================
+
+from gensim.models import Word2Vec
+
+# Tokenizar el texto
+tokenized_text = [
+    texto.split()
+    for texto in dataset_pronabec["TEXTO_SIN_STOPWORDS"]
+]
+
+# Entrenar el modelo Word2Vec
+modelo_w2v = Word2Vec(
+    sentences=tokenized_text,
+    vector_size=100,
+    window=5,
+    min_count=1,
+    workers=4,
+    sg=0  # 0 = CBOW | 1 = Skip-Gram
+)
+
+print("=" * 60)
+print("Modelo Word2Vec entrenado")
+print("=" * 60)
+
+print("Cantidad de palabras:", len(modelo_w2v.wv))
+
+# =====================================
+# Obtener el vector de una palabra
+# =====================================
+
+palabra = "beca"
+
+if palabra in modelo_w2v.wv:
+    vector = modelo_w2v.wv[palabra]
+
+    print("\n" + "=" * 60)
+    print(f"Vector de la palabra '{palabra}'")
+    print("=" * 60)
+
+    print(vector)
+else:
+    print(f"La palabra '{palabra}' no existe en el vocabulario.")
+
+# =====================================
+# Palabras más similares
+# =====================================
+
+print("\n" + "=" * 60)
+print("Palabras similares a 'beca'")
+print("=" * 60)
+
+print(modelo_w2v.wv.most_similar("beca", topn=10))
+
+# =====================================
+# Similitud entre dos palabras
+# =====================================
+
+print("\n" + "=" * 60)
+print("Similitud entre palabras")
+print("=" * 60)
+
+similitud = modelo_w2v.wv.similarity("beca", "pronabec")
+
+print(f"Similitud entre 'beca' y 'pronabec': {similitud:.4f}")
+
+# =====================================
+# Tamaño del vocabulario
+# =====================================
+
+print("\n" + "=" * 60)
+print("Primeras 20 palabras del vocabulario")
+print("=" * 60)
+
+print(modelo_w2v.wv.index_to_key[:20])
+
+
+
+
+
+
+# =====================================
+# Modelos de Lenguaje - N-Gramas  06/07/2026
+# =====================================
+
+import nltk
+from nltk.util import trigrams
+from collections import defaultdict
+
+# Descargar recursos (solo la primera vez)
+nltk.download("punkt")
+
+# =====================================
+# Preparar el corpus
+# =====================================
+
+corpus = dataset_pronabec["TEXTO_SIN_STOPWORDS"]
+
+# Tokenizar cada documento
+corpus_tokenizado = [
+    nltk.word_tokenize(texto, language="spanish")
+    for texto in corpus
+]
+
+# =====================================
+# Construcción del modelo de trigramas
+# =====================================
+
+modelo = defaultdict(lambda: defaultdict(int))
+
+for documento in corpus_tokenizado:
+    for w1, w2, w3 in trigrams(
+        documento,
+        pad_left=True,
+        pad_right=True
+    ):
+        modelo[(w1, w2)][w3] += 1
+
+# =====================================
+# Convertir frecuencias en probabilidades
+# =====================================
+
+for contexto in modelo:
+
+    total = float(sum(modelo[contexto].values()))
+
+    for palabra in modelo[contexto]:
+        modelo[contexto][palabra] /= total
+
+print("=" * 60)
+print("Modelo de lenguaje creado")
+print("=" * 60)
+
+print("Cantidad de contextos:", len(modelo))
