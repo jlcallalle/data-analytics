@@ -101,3 +101,69 @@ Resultados:
 
 Cuando se trata de analisas, reducir diccionario de bolsa de palabras. 
 Poor eso el entendimiento sirve como parte probablemente para los LLMS
+
+
+/* 08/07/2026*/
+
+Lectura de datasets
+        │
+        ▼
+Exploración inicial
+        │
+        ▼
+Consolidación (Merge)
+        │
+        ▼
+Análisis de una variable objetivo
+        │
+        ▼
+Limpieza de datos
+        │
+        ▼
+Feature Engineering
+        │
+        ▼
+EDA
+        │
+        ▼
+Visualizaciones
+
+--
+Profe respondio: 
+En EDA se puede poner variable objetivo. 
+
+Agregaría el paso de Entendimiento el negocio
+Antes de la Exploración, entendimiento del negocio. 
+
+Normalización de variables 
+Codificación de variables categóricas, para poder ingestarlo a un modelo o algoritmo, para diferencia valores ATIPOCOS
+
+Despues del EDA: Sería procesamiento de Datos 
+---
+
+1. Análisis Univariado
+
+"Uni" = una variable
+
+Consiste en analizar una sola variable a la vez para comprender su comportamiento.
+
+Su objetivo es responder preguntas como:
+
+¿Cómo se distribuyen los datos?
+¿Cuál es el promedio?
+¿Existen valores atípicos?
+¿Hay valores nulos?
+¿Cuál es el rango?
+
+
+2. Análisis Bivariado
+
+"Bi" = dos variables
+
+Consiste en estudiar la relación entre dos variables.
+
+Busca responder preguntas como:
+
+¿La edad influye en la remuneración?
+¿A mayor sueldo existe mayor saldo?
+¿Los hombres cotizan más que las mujeres?
