@@ -167,3 +167,20 @@ Busca responder preguntas como:
 ¿La edad influye en la remuneración?
 ¿A mayor sueldo existe mayor saldo?
 ¿Los hombres cotizan más que las mujeres?
+
+
+
+Caracteristicas en báse a este periodo, vamos a predecir cuales al siguiente semestre se van a matricular
+objetivo:
+
+
+2024-2  | 2025-1
+
+Alumnos 
+CR: 1 - 9  => postible desertor
+CR: 10 - 11
+
+Canchimbos, quitar 
+
+
+ESA VA GENERAR PARA MODELO PREDICTIVO: 
