@@ -189,3 +189,59 @@ ESA VA GENERAR PARA MODELO PREDICTIVO:
 //// CLASE 14 ///////// 13/07/26
 
 /* MODULO 2 - CLASE 1* - 27/07/2026 */
+
+
+PROYECTO FINAL 
+===========
+
+Los pasos que deben incluir de manera obligatoria para la calificación completa del proyecto son:
+•	Carga o importación del dataset (originalidad del dataset) (2p)
+•	Análisis univariado de datos (3p)
+•	Análisis bivariado de datos (2p)
+•	Análisis multivariado de datos (2p)
+•	Limpieza de datos/Imputación de datos faltantes (1p)
+•	Identificación de outliers y eliminación (si corresponde a criterio propio) (2p)
+•	Codificación de variables categóricas (1p)
+•	Escalamiento de datos (1p)
+•	Selección de variables (0.5p)
+•	Entrenamiento del modelo analítico y evaluación del performance (se puede emplear más de una métrica de evaluación) (2.5p):
+           Opción 1: Clusterización (Modelo KMeans, métrica de evaluación sugerida: coeficiente de silueta)
+           Opción 2: Modelo predictivo (A elección propia dependiendo del problema a resolver: clasificación o regresión, métrica de evaluación a criterio propio)
+•	Hallazgos importantes: descripción textual sobre hallazgos interesantes o importantes durante la exploración de los datos (del análisis univariado, bivariado y multivariado) (3p)
+ 
+**De manera OPCIONAL, los pasos que se evalúan con puntos adicionales (+2 puntos) son:
+•	Opción 1:
+- Aplicación del método del codo para encontrar el k (número de clústeres) óptimo
+- Uso de PCA para mejorar el resultado y visualización
+•	Opción 2:
+- Aplicación de un método de balanceo de datos, de ser el caso
+- Optimización de hiperparámetros del modelo predictivo
+
+Analisis exploratorio: EDA 
+Investigaciones iniciales y patrones: 
+  - Categoria con mayor proporción 
+
+1) Analisis Univariable 
+   a) Variable categoricas 
+    - categoria con mayor proporción por ejem
+    - Gráfico de barra, pasteles  
+   b) Variable numéricas
+      - Gráfico para visualizar distiribucion de datos numericos
+      Histograma, BlockSplot
+
+2)  Análisis bivariado de datos
+- Visualización de interacción entre 2 varaibles, 
+  en variable categóricas y variable numérica. 
+- GRAFICO histogramas dividida por categoria
+
+3)  Análisis multivariado de datos
+- incluye más variables 
+GRAFICO: Mapa de calor 
+
+
+GRAFICOS 
+Histograma: Mostrar distribución de rango de valores 
+0 al 14, divide cada 2 unidades 
+
+Gráfico de barras:
+Talla X, S, M 
