@@ -201,9 +201,11 @@ Los pasos que deben incluir de manera obligatoria para la calificación completa
 •	Análisis multivariado de datos (2p)
 •	Limpieza de datos/Imputación de datos faltantes (1p)
 •	Identificación de outliers y eliminación (si corresponde a criterio propio) (2p)
+
 •	Codificación de variables categóricas (1p)
 •	Escalamiento de datos (1p)
 •	Selección de variables (0.5p)
+
 •	Entrenamiento del modelo analítico y evaluación del performance (se puede emplear más de una métrica de evaluación) (2.5p):
            Opción 1: Clusterización (Modelo KMeans, métrica de evaluación sugerida: coeficiente de silueta)
            Opción 2: Modelo predictivo (A elección propia dependiendo del problema a resolver: clasificación o regresión, métrica de evaluación a criterio propio)
@@ -245,3 +247,13 @@ Histograma: Mostrar distribución de rango de valores
 
 Gráfico de barras:
 Talla X, S, M 
+
+__
+
+Variable Numéricas:
+Realizar: 
+Codificación de variables categóricas (1p)
+Escalamiento de datos (1p)
+Selección de variables (0.5p)
+
+
