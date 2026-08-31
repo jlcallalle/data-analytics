@@ -257,3 +257,132 @@ Escalamiento de datos (1p)
 Selección de variables (0.5p)
 
 
+
+
+//////////////////////////////////////////////
+
+- **Módulo 1 — Fundamentos estadísticos (clases 1–5)**
+    - Variables aleatorias discretas y continuas.
+    - Esperanza, varianza y distribución normal.
+    - Teorema del límite central, verosimilitud y estimación.
+- **Módulo 2 — Inferencia y pruebas de hipótesis (clases 6–11)**
+    - Intervalos de confianza.
+    - Medias, proporciones y varianzas.
+    - Chi-cuadrado, ANOVA, correlación y regresión.
+- **Módulo 3 — Experimentación y A/B testing (clases 12–14)**
+    - Diseño de experimentos.
+    - Análisis y toma de decisiones.
+    - Casos de marketing y UX.
+
+///////////////////////////////////////////////
+
+
+ESTADISTICA DESCRIPTIVA E INFERENCIAL 
+--------------------------------------------
+
+Clase 1 - Clase01_Variables_Aleatorias_colab
+Clase 2 - Clase02_VA_Continuas
+Clase 3 - Clase03_Normal_y_Derivadas
+Clase04_Estimacion_e_Intervalos
+Clase05_Pruebas_de_Hipotesis
+Clase06_Comparacion_de_Grupos
+Clase07_Taller_Pobreza_ENAHO
+Clase08_Chi_Cuadrado
+Clase09_Fisher_Simpson
+Clase10_Correlacion_Regresion
+Clase11_Regresion_Multiple
+Clase12_Regresion_Logistica
+
+
+DataSet: Titanic
+Este fragmento corresponde al clásico dataset Titanic, usado frecuentemente para practicar análisis exploratorio, limpieza de datos y modelos de clasificación, especialmente regresión logística.
+
+
+PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+1,0,3,"Braund, Mr. Owen Harris",male,22,1,0,A/5 21171,7.25,,S
+2,1,1,"Cumings, Mrs. John Bradley (Florence Briggs Thayer)",female,38,1,0,PC 17599,71.2833,C85,C
+3,1,3,"Heikkinen, Miss. Laina",female,26,0,0,STON/O2. 3101282,7.925,,S
+4,1,1,"Futrelle, Mrs. Jacques Heath (Lily May Peel)",female,35,1,0,113803,53.1,C123,S
+5,0,3,"Allen, Mr. William Henry",male,35,0,0,373450,8.05,,S
+6,0,3,"Moran, Mr. James",male,,0,0,330877,8.4583,,Q
+
+
+| Variable      | Significado                                        | Tipo               |
+| ------------- | -------------------------------------------------- | ------------------ |
+| `PassengerId` | Identificador único del pasajero                   | Numérica           |
+| `Survived`    | Sobrevivió: `0 = No`, `1 = Sí`                     | Categórica/binaria |
+| `Pclass`      | Clase: `1 = Primera`, `2 = Segunda`, `3 = Tercera` | Categórica ordinal |
+| `Name`        | Nombre del pasajero                                | Texto              |
+| `Sex`         | Sexo (`male`, `female`)                            | Categórica         |
+| `Age`         | Edad                                               | Numérica           |
+| `SibSp`       | Nº de hermanos/esposos a bordo                     | Numérica discreta  |
+| `Parch`       | Nº de padres/hijos a bordo                         | Numérica discreta  |
+| `Ticket`      | Número de ticket                                   | Texto/categórica   |
+| `Fare`        | Tarifa pagada                                      | Numérica continua  |
+| `Cabin`       | Cabina                                             | Categórica         |
+| `Embarked`    | Puerto de embarque                                 | Categórica         |
+
+
+2. Análisis de los 6 registros
+
+En la muestra tenemos 6 pasajeros:
+
+Sobrevivieron: 3
+No sobrevivieron: 3
+Tasa de supervivencia: 50 %
+Hombres: 3
+Mujeres: 3
+
+
+Lo más interesante aparece al cruzar Sex con Survived:
+| Sexo   | Pasajeros | Sobrevivieron | % supervivencia |
+| ------ | --------: | ------------: | --------------: |
+| Female |         3 |             3 |       **100 %** |
+| Male   |         3 |             0 |         **0 %** |
+
+
+En esta pequeña muestra, todas las mujeres sobrevivieron y todos los hombres fallecieron. Es una señal de que Sex podría ser una variable predictora importante, aunque con solo 6 observaciones no podemos generalizar
+
+3. Clase del pasajero
+
+| Clase | Pasajeros | Sobrevivieron |         % |
+| ----- | --------: | ------------: | --------: |
+| 1ª    |         2 |             2 | **100 %** |
+| 2ª    |         0 |             0 |         — |
+| 3ª    |         4 |             1 |  **25 %** |
+
+
+Aquí también aparece una relación interesante: los 2 pasajeros de primera clase sobrevivieron, mientras que solo 1 de los 4 pasajeros de tercera clase sobrevivió.
+
+Por tanto, Pclass también podría tener capacidad predictiva
+
+
+4. Edad
+
+Las edades disponibles son:
+
+22, 38, 26, 35, 35
+
+El pasajero 6 (Moran, Mr. James) tiene la edad vacía.
+
+Tenemos entonces:
+
+Edad mínima: 22
+Edad máxima: 38
+Promedio: 31.2 años
+Valores faltantes: 1 de 6 = 16.7 %
+
+Esto introduce un problema típico de datos faltantes.
+
+
+Clasificaciones
+- regresion logística, es predecir si o no 
+- regresion lineal, predice dia 
+En vez de predecir número, predecir etiquetas.
+
+
+¿Que probabilidad tiene de morir?
+
+
+----------------
+Ajustar e interpretar una lógica
