@@ -1,0 +1,51 @@
+X = datos[["mujer", "Pclass", "edad"]]
+y = datos["Survived"]
+
+--
+Survived: variable objetivo, vale 1 si sobrevivió y 0 si no.
+Sex: sexo del pasajero.
+Pclass: clase del boleto, 1, 2 o 3.
+Age: edad.
+
+Proyecto
+X = datos[["sex", "Pclass", "Parch"]] | Embarked
+y = datos["Survived"]
+
+---
+
+Proyecto
+X = datos[["sex", "Pclass", "Parch"]] | "Cantidad hijo"
+y = datos["Survived"]
+
+
+
+Proyecto
+X = datos[["sex", "Pclass", "Fare"]] | "Tarifa de clase"
+y = datos["Survived"]
+
+----
+
+Teniendo contexto Clase12_Regresion_Logistica_SOLUCION.ipynb
+que fue un ejemplo del profesor para proyecto final,
+
+Deseo implementar un modelo de clasificación paso a paso, midiendo qué aporta las siguientes variables
+
+
+Proyecto
+X = datos[["sex", "Pclass", "Fare"]] | 
+y = datos["Survived"]
+
+
+quitando variable familia y tiene_camarote del ejemplo
+
+Crear un archivo colab: Proyecto_Titanic_Resultado.ipynb, tomando como referencia la estructura de colab \Proyecto_Titanic.ipynb
+
+
+X = d[["sex", "Pclass", "age", "Fare"]]
+y = d["Survived"]
+
+
+¿Qué tanto mejora el modelo cuando agrego Pclass, luego age, y luego Fare?
+
+---------------------------------------------------------------------
+
