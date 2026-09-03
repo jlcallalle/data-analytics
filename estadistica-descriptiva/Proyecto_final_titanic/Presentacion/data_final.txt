@@ -41,7 +41,7 @@ quitando variable familia y tiene_camarote del ejemplo
 Crear un archivo colab: Proyecto_Titanic_Resultado.ipynb, tomando como referencia la estructura de colab \Proyecto_Titanic.ipynb
 
 
-X = d[["sex", "Pclass", "age", "Fare"]]
+X = d[["sex", "Pclass", "age", "Fare"]]  Fare= Tarifa pagada por el pasajero
 y = d["Survived"]
 
 
@@ -49,3 +49,13 @@ y = d["Survived"]
 
 ---------------------------------------------------------------------
 
+
+
+Survived: Estado de supervivencia del pasajero (0 = No sobrevivió, 1 = Sobrevivió).
+Pclass: Clase de pasajero (1 = Primera clase, 2 = Segunda clase, 3 = Tercera clase).
+Sex: Género del pasajero.
+Age: Edad del pasajero.
+SibSp: Número de hermanos/cónyuges a bordo del Titanic.
+Parch: Número de padres/hijos a bordo del Titanic.
+Fare: Tarifa pagada por el pasajero.
+Embarked: Puerto de embarque (C = Cherbourg, Q = Queenstown, S = Southampton).
