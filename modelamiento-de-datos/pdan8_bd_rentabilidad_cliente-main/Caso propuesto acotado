@@ -1,0 +1,227 @@
+Propuesta de caso acotado
+Banca: Modelo de Rentabilidad por Cliente
+
+El banco FinanPerú desea implementar una base de datos que le permita analizar la rentabilidad que genera cada uno de sus clientes a partir de los productos financieros que mantiene y las operaciones realizadas durante un período determinado.
+
+El objetivo es que el área de negocio pueda identificar qué clientes generan mayor rentabilidad, qué productos son más rentables y cómo evolucionan los ingresos, costos y rentabilidad de los clientes.
+
+Para este proyecto se considerará únicamente información relacionada con:
+
+Clientes.
+Segmentos.
+Productos financieros.
+Contratación de productos.
+Operaciones realizadas.
+Ingresos generados.
+Costos asociados.
+Rentabilidad por período.
+
+Se excluirán del alcance aspectos propios de la operación bancaria detallada, como el manejo de cuotas de préstamos, tarjetas de crédito, cuentas bancarias, saldos diarios, movimientos contables y procesos de desembolso.
+
+1. Clientes
+
+El banco registra clientes, tanto personas naturales como empresas.
+
+Para cada cliente se requiere almacenar:
+
+Código de cliente.
+Tipo de cliente.
+Documento de identidad o RUC.
+Nombre o razón social.
+Fecha de alta.
+Segmento al que pertenece.
+Estado.
+
+Un cliente pertenece a un segmento comercial.
+
+El banco desea conservar la información necesaria para analizar la rentabilidad de sus clientes durante el período de estudio.
+
+2. Segmentos de clientes
+
+El banco clasifica a sus clientes en diferentes segmentos comerciales.
+
+Por ejemplo:
+
+Personas.
+Preferente.
+Premium.
+Pequeñas empresas.
+Medianas empresas.
+Grandes empresas.
+
+Cada segmento tiene:
+
+Código.
+Nombre.
+Descripción.
+
+Para simplificar el alcance del proyecto, se considerará que un cliente pertenece a un único segmento durante el período analizado.
+
+3. Productos financieros
+
+El banco ofrece diferentes productos financieros.
+
+Por ejemplo:
+
+Cuenta de ahorro.
+Tarjeta de crédito.
+Préstamo personal.
+Crédito vehicular.
+Crédito hipotecario.
+Depósito a plazo.
+
+Cada producto pertenece a una categoría.
+
+Se requiere registrar:
+
+Código del producto.
+Nombre.
+Categoría.
+Tipo de producto.
+Moneda.
+Estado.
+4. Contratación de productos
+
+Un cliente puede contratar uno o varios productos financieros.
+
+Por ejemplo:
+
+Un cliente puede contratar una cuenta de ahorro, una tarjeta de crédito y posteriormente un préstamo personal.
+
+Para cada contratación se desea conocer:
+
+Cliente.
+Producto.
+Fecha de contratación.
+Fecha de cancelación, si corresponde.
+Estado de la contratación.
+
+Un cliente puede contratar el mismo producto más de una vez en diferentes momentos.
+
+5. Operaciones
+
+Los clientes realizan operaciones relacionadas con los productos contratados.
+
+Para este proyecto se considerarán operaciones como:
+
+Compras.
+Transferencias.
+Retiros.
+Pagos.
+Otros servicios.
+
+Cada operación debe registrar como mínimo:
+
+Cliente.
+Producto.
+Tipo de operación.
+Fecha.
+Canal.
+Importe.
+Moneda.
+Estado.
+
+Las operaciones serán utilizadas posteriormente para determinar los ingresos y costos asociados a los clientes.
+
+6. Canales
+
+Las operaciones pueden realizarse mediante diferentes canales:
+
+Agencia.
+Cajero automático.
+Banca móvil.
+Banca por Internet.
+POS.
+
+Cada canal tendrá:
+
+Código.
+Nombre.
+Descripción.
+
+El banco desea analizar posteriormente qué canales generan mayor volumen de operaciones y rentabilidad.
+
+7. Ingresos
+
+Las operaciones y productos pueden generar ingresos para el banco.
+
+Los principales conceptos considerados para este proyecto son:
+
+Intereses.
+Comisiones.
+Otros ingresos.
+
+Para cada ingreso se requiere conocer:
+
+Cliente relacionado.
+Producto relacionado, cuando corresponda.
+Operación relacionada, cuando corresponda.
+Tipo de ingreso.
+Fecha.
+Importe.
+
+Un ingreso puede estar asociado directamente a una operación o a un producto.
+
+8. Costos
+
+El banco también incurre en costos asociados a la atención y operación de sus clientes.
+
+Para este proyecto se considerarán:
+
+Costos de operación.
+Costos de procesamiento.
+Costos de canal.
+Otros costos.
+
+Cada costo deberá registrar:
+
+Cliente al que se asigna.
+Producto relacionado, cuando corresponda.
+Tipo de costo.
+Fecha.
+Importe.
+
+No todos los costos necesariamente estarán asociados a una operación específica.
+
+9. Rentabilidad
+
+El área financiera desea obtener la rentabilidad generada por cada cliente.
+
+Para efectos del proyecto se utilizará la siguiente definición:
+
+Rentabilidad = Ingresos − Costos
+
+La rentabilidad debe poder analizarse por:
+
+Cliente.
+Producto.
+Segmento.
+Período.
+
+El banco considera como período de análisis un mes.
+
+Por lo tanto, se debe poder determinar, por ejemplo:
+
+Cliente	Mes	Ingresos	Costos	Rentabilidad
+Cliente A	Enero	S/ 450	S/ 180	S/ 270
+Cliente A	Febrero	S/ 520	S/ 200	S/ 320
+Cliente B	Enero	S/ 150	S/ 230	-S/ 80
+
+Estos datos son únicamente ilustrativos y no forman parte de la solución.
+
+10. Requerimientos de análisis
+
+Una vez implementada la base de datos, el banco deberá poder responder preguntas como:
+
+¿Cuál es el ingreso total generado por cada cliente?
+¿Cuál es el costo total asociado a cada cliente?
+¿Cuál es la rentabilidad de cada cliente?
+¿Cuáles son los 10 clientes más rentables?
+¿Qué clientes presentan rentabilidad negativa?
+¿Qué productos generan mayores ingresos?
+¿Qué productos generan mayor rentabilidad?
+¿Qué segmento de clientes es más rentable?
+¿Qué canal concentra mayor cantidad de operaciones?
+¿Qué canal genera mayor rentabilidad?
+¿Cómo evoluciona mensualmente la rentabilidad de un cliente?
+¿Qué clientes generan altos ingresos pero también altos costos?
