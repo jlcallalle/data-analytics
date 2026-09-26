@@ -50,7 +50,6 @@ y = d["Survived"]
 ---------------------------------------------------------------------
 
 
-
 Survived: Estado de supervivencia del pasajero (0 = No sobrevivió, 1 = Sobrevivió).
 Pclass: Clase de pasajero (1 = Primera clase, 2 = Segunda clase, 3 = Tercera clase).
 Sex: Género del pasajero.
@@ -59,3 +58,19 @@ SibSp: Número de hermanos/cónyuges a bordo del Titanic.
 Parch: Número de padres/hijos a bordo del Titanic.
 Fare: Tarifa pagada por el pasajero.
 Embarked: Puerto de embarque (C = Cherbourg, Q = Queenstown, S = Southampton).
+
+
+1 = mujer,
+0 = hombre,
+
+X = d[["sex", "Pclass", "age", "Fare"]]  Fare= Tarifa pagada por el pasajero
+y = d["Survived"]
+
+
+GRAFICO:
+
+En el eje horizontal se observa la tarifa pagada por los pasajeros, y en el eje vertical la frecuencia, es decir, cuántos pasajeros pagaron tarifas dentro de cada rango. El color rosado representa a quienes no sobrevivieron y el azul a quienes sobrevivieron.
+
+El gráfico muestra que la mayoría de pasajeros pagó tarifas bajas, y en ese grupo hubo muchos fallecidos. A medida que la tarifa aumenta, se observa mayor presencia de sobrevivientes.
+
+Esto sugiere que pagar más estuvo asociado con mayor probabilidad de sobrevivir, aunque probablemente porque la tarifa está relacionada con viajar en una mejor clase (Pclass).
