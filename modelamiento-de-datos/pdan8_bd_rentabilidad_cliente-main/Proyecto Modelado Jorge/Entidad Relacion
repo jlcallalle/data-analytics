@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1750" viewBox="0 0 1600 1750" role="img" aria-label="Modelo entidad relación TherapyFlex en notación Chen"><rect width="1600" height="1750" fill="#f8fafc"/><g font-family="Arial, sans-serif" fill="#172033">
+<text x="800" y="45" font-size="32" text-anchor="middle" dominant-baseline="middle" font-weight="700">TherapyFlex · Modelo entidad–relación</text>
+<text x="800" y="83" font-size="18" text-anchor="middle" dominant-baseline="middle" >Notación Chen · Basado en los scripts SQL del proyecto · Atributos principales</text>
+<rect x="25" y="115" width="1550" height="370" rx="12" fill="#fff" stroke="#dbe2ea"/>
+<text x="55" y="150" font-size="22" font-weight="600">01 · Agenda y pagos</text>
+<rect x="150" y="278" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="250" y="305" font-size="21" text-anchor="middle" dominant-baseline="middle" >PACIENTE</text>
+<rect x="700" y="278" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="800" y="305" font-size="21" text-anchor="middle" dominant-baseline="middle" >CITA</text>
+<rect x="1250" y="278" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="1350" y="305" font-size="21" text-anchor="middle" dominant-baseline="middle" >PAGO</text>
+<path d="M350 305L433 305" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M617 305L700 305" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="433,305 525,265 617,305 525,345" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="525" y="305" font-size="18" text-anchor="middle" dominant-baseline="middle" >Agenda</text>
+<text x="372" y="288" font-size="17" text-anchor="middle" dominant-baseline="middle" >0..1</text>
+<text x="677" y="288" font-size="17" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="525" y="249" font-size="16" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<path d="M900 305L983 305" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M1167 305L1250 305" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="983,305 1075,265 1167,305 1075,345" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="1075" y="305" font-size="18" text-anchor="middle" dominant-baseline="middle" >Asocia</text>
+<text x="922" y="288" font-size="17" text-anchor="middle" dominant-baseline="middle" >0..1</text>
+<text x="1227" y="288" font-size="17" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="1075" y="249" font-size="16" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<path d="M192 332L105 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="105" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="105" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M250 332L250 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="250" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="250" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" >Nombre</text>
+<path d="M308 332L395 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="395" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="395" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" >DNI</text>
+<path d="M742 332L655 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="655" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="655" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M800 332L800 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="800" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="800" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" >Fecha</text>
+<path d="M858 332L945 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="945" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="945" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" >Estado</text>
+<path d="M1292 332L1205 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1205" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1205" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M1350 332L1350 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1350" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1350" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" >Importe</text>
+<path d="M1408 332L1495 413" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1495" cy="413" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1495" y="413" font-size="17" text-anchor="middle" dominant-baseline="middle" >Método</text>
+<path d="M250 278V190H708" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M892 190H1350V278" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="708,190 800,150 892,190 800,230" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="800" y="190" font-size="18" text-anchor="middle" dominant-baseline="middle" >Realiza</text>
+<text x="285" y="175" font-size="16" text-anchor="middle" dominant-baseline="middle" >0..1</text>
+<text x="1320" y="175" font-size="16" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="800" y="137" font-size="15" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<rect x="25" y="505" width="1550" height="370" rx="12" fill="#fff" stroke="#dbe2ea"/>
+<text x="55" y="540" font-size="22" font-weight="600">02 · Historia clínica</text>
+<rect x="150" y="668" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="250" y="695" font-size="21" text-anchor="middle" dominant-baseline="middle" >PACIENTE</text>
+<rect x="700" y="668" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="800" y="695" font-size="21" text-anchor="middle" dominant-baseline="middle" >SESIÓN</text>
+<rect x="1250" y="668" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="1350" y="695" font-size="21" text-anchor="middle" dominant-baseline="middle" >ARCHIVO CLÍNICO</text>
+<path d="M350 695L433 695" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M617 695L700 695" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="433,695 525,655 617,695 525,735" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="525" y="695" font-size="18" text-anchor="middle" dominant-baseline="middle" >Recibe</text>
+<text x="372" y="678" font-size="17" text-anchor="middle" dominant-baseline="middle" >0..1</text>
+<text x="677" y="678" font-size="17" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="525" y="639" font-size="16" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<path d="M900 695L983 695" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M1167 695L1250 695" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="983,695 1075,655 1167,695 1075,735" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="1075" y="695" font-size="18" text-anchor="middle" dominant-baseline="middle" >Adjunta</text>
+<text x="922" y="678" font-size="17" text-anchor="middle" dominant-baseline="middle" >1</text>
+<text x="1227" y="678" font-size="17" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="1075" y="639" font-size="16" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<path d="M192 722L105 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="105" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="105" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M250 722L250 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="250" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="250" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" >Diagnóstico</text>
+<path d="M308 722L395 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="395" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="395" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" >EVA</text>
+<path d="M742 722L655 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="655" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="655" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M800 722L800 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="800" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="800" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" >Tratamiento</text>
+<path d="M858 722L945 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="945" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="945" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" >Evolución</text>
+<path d="M1292 722L1205 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1205" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1205" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M1350 722L1350 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1350" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1350" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" >Ruta</text>
+<path d="M1408 722L1495 803" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1495" cy="803" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1495" y="803" font-size="17" text-anchor="middle" dominant-baseline="middle" >Tipo</text>
+<path d="M250 668V580H708" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M892 580H1350V668" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="708,580 800,540 892,580 800,620" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="800" y="580" font-size="18" text-anchor="middle" dominant-baseline="middle" >Posee</text>
+<text x="285" y="565" font-size="16" text-anchor="middle" dominant-baseline="middle" >1</text>
+<text x="1320" y="565" font-size="16" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="800" y="527" font-size="15" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<rect x="25" y="895" width="1550" height="370" rx="12" fill="#fff" stroke="#dbe2ea"/>
+<text x="55" y="930" font-size="22" font-weight="600">03 · Facturación</text>
+<rect x="150" y="1033" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="250" y="1060" font-size="21" text-anchor="middle" dominant-baseline="middle" >PACIENTE</text>
+<rect x="700" y="1033" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="800" y="1060" font-size="21" text-anchor="middle" dominant-baseline="middle" >FACTURA</text>
+<rect x="1250" y="1033" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="1350" y="1060" font-size="21" text-anchor="middle" dominant-baseline="middle" >DETALLE</text>
+<path d="M350 1060L433 1060" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M617 1060L700 1060" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="433,1060 525,1020 617,1060 525,1100" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="525" y="1060" font-size="18" text-anchor="middle" dominant-baseline="middle" >Tiene</text>
+<text x="372" y="1043" font-size="17" text-anchor="middle" dominant-baseline="middle" >1</text>
+<text x="677" y="1043" font-size="17" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="525" y="1004" font-size="16" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<path d="M900 1060L983 1060" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M1167 1060L1250 1060" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="983,1060 1075,1020 1167,1060 1075,1100" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="1075" y="1060" font-size="18" text-anchor="middle" dominant-baseline="middle" >Contiene</text>
+<text x="922" y="1043" font-size="17" text-anchor="middle" dominant-baseline="middle" >1</text>
+<text x="1227" y="1043" font-size="17" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="1075" y="1004" font-size="16" text-anchor="middle" dominant-baseline="middle" >1:N</text>
+<path d="M192 1087L105 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="105" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="105" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M250 1087L250 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="250" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="250" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" >Nombre</text>
+<path d="M308 1087L395 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="395" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="395" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" >Dirección</text>
+<path d="M742 1087L655 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="655" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="655" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M800 1087L800 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="800" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="800" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" >Número</text>
+<path d="M858 1087L945 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="945" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="945" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" >Total</text>
+<path d="M1292 1087L1205 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1205" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1205" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M1350 1087L1350 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1350" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1350" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" >Cantidad</text>
+<path d="M1408 1087L1495 1168" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1495" cy="1168" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1495" y="1168" font-size="17" text-anchor="middle" dominant-baseline="middle" >Precio unitario</text>
+<rect x="25" y="1285" width="980" height="285" rx="12" fill="white" stroke="#dbe2ea"/><rect x="1025" y="1285" width="550" height="285" rx="12" fill="white" stroke="#dbe2ea"/>
+<text x="55" y="1320" font-size="22" font-weight="600">04 · Autoría · auth.users</text>
+<rect x="90" y="1403" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="190" y="1430" font-size="21" text-anchor="middle" dominant-baseline="middle" >USUARIO</text>
+<path d="M190 1457L190 1510" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="190" cy="1527" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="190" y="1527" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M290 1430H340V1360H453" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M637 1360L745 1360" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="453,1360 545,1333 637,1360 545,1387" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="545" y="1360" font-size="18" text-anchor="middle" dominant-baseline="middle" >Registra</text>
+<rect x="745" y="1333" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="845" y="1360" font-size="21" text-anchor="middle" dominant-baseline="middle" >SESIÓN</text>
+<text x="407" y="1347" font-size="15" text-anchor="middle" dominant-baseline="middle" >0..1</text>
+<text x="712" y="1347" font-size="15" text-anchor="middle" dominant-baseline="middle" >N</text>
+<path d="M290 1430H340V1430H453" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M637 1430L745 1430" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="453,1430 545,1403 637,1430 545,1457" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="545" y="1430" font-size="18" text-anchor="middle" dominant-baseline="middle" >Registra</text>
+<rect x="745" y="1403" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="845" y="1430" font-size="21" text-anchor="middle" dominant-baseline="middle" >PAGO</text>
+<text x="407" y="1417" font-size="15" text-anchor="middle" dominant-baseline="middle" >0..1</text>
+<text x="712" y="1417" font-size="15" text-anchor="middle" dominant-baseline="middle" >N</text>
+<path d="M290 1430H340V1500H453" fill="none" stroke="#475569" stroke-width="1.8"/>
+<path d="M637 1500L745 1500" fill="none" stroke="#475569" stroke-width="1.8"/>
+<polygon points="453,1500 545,1473 637,1500 545,1527" fill="white" stroke="#334155" stroke-width="1.8"/>
+<text x="545" y="1500" font-size="18" text-anchor="middle" dominant-baseline="middle" >Registra</text>
+<rect x="745" y="1473" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="845" y="1500" font-size="21" text-anchor="middle" dominant-baseline="middle" >FACTURA</text>
+<text x="407" y="1487" font-size="15" text-anchor="middle" dominant-baseline="middle" >0..1</text>
+<text x="712" y="1487" font-size="15" text-anchor="middle" dominant-baseline="middle" >N</text>
+<text x="1055" y="1320" font-size="22" font-weight="600">05 · Reseñas · Sin relación declarada</text>
+<rect x="1200" y="1363" width="200" height="54" fill="white" stroke="#1e293b" stroke-width="2"/>
+<text x="1300" y="1390" font-size="21" text-anchor="middle" dominant-baseline="middle" >RESEÑA GOOGLE</text>
+<path d="M1242 1417L1155 1498" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1155" cy="1498" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1155" y="1498" font-size="17" text-anchor="middle" dominant-baseline="middle" text-decoration="underline">id</text>
+<path d="M1300 1417L1300 1498" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1300" cy="1498" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1300" y="1498" font-size="17" text-anchor="middle" dominant-baseline="middle" >Puntuación</text>
+<path d="M1358 1417L1445 1498" fill="none" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="1445" cy="1498" rx="86" ry="27" fill="white" stroke="#475569" stroke-width="1.6"/>
+<text x="1445" y="1498" font-size="17" text-anchor="middle" dominant-baseline="middle" >Comentario</text>
+<text x="800" y="1610" font-size="19" text-anchor="middle" dominant-baseline="middle" >Rectángulo: entidad   ·   Rombo: relación   ·   Óvalo: atributo   ·   Subrayado: clave primaria</text>
+<text x="800" y="1645" font-size="18" text-anchor="middle" dominant-baseline="middle" >N: cero o muchos registros · 0..1: referencia opcional · Las entidades repetidas representan la misma tabla.</text>
+<text x="800" y="1680" font-size="17" text-anchor="middle" dominant-baseline="middle" >La obligatoriedad de paciente en sesiones y pagos depende de las migraciones aplicadas; aquí se usa el esquema permisivo.</text>
+<text x="800" y="1715" font-size="17" text-anchor="middle" dominant-baseline="middle" >No hay relaciones declaradas cita–sesión ni pago–factura. El esquema efectivo en Supabase está pendiente de verificar.</text>
+</g></svg>

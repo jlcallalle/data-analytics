@@ -1,0 +1,3 @@
+1.- Modelo ER : Que entidades existe y como se relacionan, 
+2.- Modelo Lógico: Cómo se organizan las tablas, atributos, PK y FK, clientes, costos
+3.- Modelo Físico: Cómo se implementa realmente en un motor como SQL Server "varachar(55), INT"
