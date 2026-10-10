@@ -1,0 +1,7 @@
+Contiene el modelado de TherapyFlex, un sistema para administrar pacientes, citas, sesiones y facturación de un centro de terapia física.
+
+
+Archivo o carpeta	Función
+Modelo Entidad Relacion	Diagrama conceptual de entidades y relaciones.
+Modelo Lógico	Dos diagramas con tablas, atributos y claves; uno presenta títulos en español.
+Modelo Físico	Diagrama de SQL Server y script de creación.
