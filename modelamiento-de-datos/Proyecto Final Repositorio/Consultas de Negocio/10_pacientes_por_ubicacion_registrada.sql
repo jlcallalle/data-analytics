@@ -14,7 +14,7 @@ El primer resultado muestra todas las ubicaciones de mayor a menor.
 El segundo indica cuántos pacientes quedaron sin ubicación utilizable.
 */
 
-USE [therapyflex_crm];
+USE [Pdan8_Academico];
 GO
 
 SELECT

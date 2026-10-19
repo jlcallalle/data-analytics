@@ -6,7 +6,7 @@ Fecha: 2026-10-02. Archivo UTF-8.
 INSTRUCCIONES
 1. Conectarse a una instancia de SQL Server desde SSMS.
 2. Abrir este archivo y ejecutarlo COMPLETO (F5).
-3. Actualizar Bases de datos > therapyflex_academico_demo > Tablas.
+3. Actualizar Bases de datos > Pdan8_Academico > Tablas.
    Se crean nueve tablas dbo.* y sus relaciones.
 
 Requiere permiso para crear la base si no existe y para crear tablas.
@@ -35,13 +35,13 @@ ADAPTACIÓN DEL MODELO
 USE [master];
 GO
 
-IF DB_ID(N'therapyflex_academico_demo') IS NULL
+IF DB_ID(N'Pdan8_Academico') IS NULL
 BEGIN
-    EXEC(N'CREATE DATABASE [therapyflex_academico_demo];');
+    EXEC(N'CREATE DATABASE [Pdan8_Academico];');
 END;
 GO
 
-USE [therapyflex_academico_demo];
+USE [Pdan8_Academico];
 GO
 
 SET NOCOUNT ON;
@@ -50,8 +50,8 @@ SET ANSI_NULLS ON;
 SET QUOTED_IDENTIFIER ON;
 
 -- Si USE falló, impide crear tablas accidentalmente en otra base.
-IF DB_NAME() <> N'therapyflex_academico_demo'
-    THROW 50001, N'La base activa debe ser therapyflex_academico_demo. Revise los errores anteriores.', 1;
+IF DB_NAME() <> N'Pdan8_Academico'
+    THROW 50001, N'La base activa debe ser Pdan8_Academico. Revise los errores anteriores.', 1;
 
 IF EXISTS (
     SELECT 1
@@ -229,7 +229,7 @@ BEGIN TRY
     CREATE INDEX google_reviews_review_created_at_idx ON dbo.google_reviews (review_created_at DESC);
 
     COMMIT TRANSACTION;
-    PRINT N'Modelo físico creado correctamente: 9 tablas en therapyflex_academico_demo.';
+    PRINT N'Modelo físico creado correctamente: 9 tablas en Pdan8_Academico.';
 END TRY
 BEGIN CATCH
     IF XACT_STATE() <> 0
@@ -266,7 +266,7 @@ GO
 
 /*
 NOTAS
-- Para visualizar relaciones: en SSMS, therapyflex_academico_demo > Diagramas de base
+- Para visualizar relaciones: en SSMS, Pdan8_Academico > Diagramas de base
   de datos > Nuevo diagrama. Seleccionar las nueve tablas y guardar.
   La primera vez SSMS puede solicitar instalar los objetos de soporte
   de diagramas; esa operación requiere los permisos correspondientes.

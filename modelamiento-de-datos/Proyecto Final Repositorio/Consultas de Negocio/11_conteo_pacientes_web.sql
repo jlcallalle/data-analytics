@@ -13,7 +13,7 @@ El valor 0 es el predeterminado del modelo: no identifica un canal
 específico como presencial, referido o redes sociales.
 */
 
-USE [therapyflex_crm];
+USE [Pdan8_Academico];
 GO
 
 SELECT

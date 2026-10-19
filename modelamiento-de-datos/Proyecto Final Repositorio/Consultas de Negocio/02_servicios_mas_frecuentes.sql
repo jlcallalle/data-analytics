@@ -12,7 +12,7 @@ No existe catálogo de servicios. Se agrupan textos completos normalizando
 solo mayúsculas y espacios exteriores; no se separan tratamientos combinados.
 No se generan datos ni se modifican registros.
 */
-USE [therapyflex_crm];
+USE [Pdan8_Academico];
 GO
 SET NOCOUNT ON;
 
@@ -20,8 +20,8 @@ SET NOCOUNT ON;
 DECLARE @FechaDesde date = NULL; -- Ejemplo: '2026-01-01'
 DECLARE @FechaHasta date = NULL; -- Ejemplo: '2026-12-31'
 
-IF DB_NAME() <> N'therapyflex_crm'
-    THROW 50001, N'Seleccione la base therapyflex_crm antes de ejecutar.', 1;
+IF DB_NAME() <> N'Pdan8_Academico'
+    THROW 50001, N'Seleccione la base Pdan8_Academico antes de ejecutar.', 1;
 
 IF @FechaDesde > @FechaHasta
     THROW 50002, N'FechaDesde no puede ser posterior a FechaHasta.', 1;

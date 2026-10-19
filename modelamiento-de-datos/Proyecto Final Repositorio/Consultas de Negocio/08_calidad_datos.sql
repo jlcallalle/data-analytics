@@ -23,13 +23,13 @@ Definiciones para interpretar los resultados:
 - El archivo solo lee datos. No crea tablas ni carga datos de prueba.
 */
 
-USE [therapyflex_crm];
+USE [Pdan8_Academico];
 GO
 SET NOCOUNT ON;
 
 
-IF DB_NAME() <> N'therapyflex_crm'
-    THROW 50001, N'Seleccione la base therapyflex_crm antes de ejecutar.', 1;
+IF DB_NAME() <> N'Pdan8_Academico'
+    THROW 50001, N'Seleccione la base Pdan8_Academico antes de ejecutar.', 1;
 
 
 /* 8. ¿QUÉ DATOS CONVIENE REVISAR ANTES DE PRESENTAR RESULTADOS?

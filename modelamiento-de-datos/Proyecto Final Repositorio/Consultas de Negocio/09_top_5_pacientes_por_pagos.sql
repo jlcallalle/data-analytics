@@ -15,7 +15,7 @@ Pasos:
 4. Ordenar de mayor a menor y mostrar TOP (5).
 */
 
-USE [therapyflex_crm];
+USE [Pdan8_Academico];
 GO
 
 SELECT TOP (5)
