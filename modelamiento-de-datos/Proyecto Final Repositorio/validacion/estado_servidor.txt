@@ -1,0 +1,27 @@
+
+tabla          filas
+-----          -----
+appointments     873
+google_reviews    70
+invoice_items      0
+invoices           0
+patients         238
+payments         162
+session_files      1
+sessions           5
+sysdiagrams        1
+users              3
+
+
+
+claves_foraneas
+---------------
+             12
+
+
+
+indices_explicitos
+------------------
+                17
+
+

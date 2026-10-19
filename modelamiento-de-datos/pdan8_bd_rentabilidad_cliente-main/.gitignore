@@ -1,2 +1,5 @@
 # Archivos temporales de generación de presentaciones
 .ppt_build/
+
+# Dependencias de Node.js en cualquier nivel de subcarpetas
+node_modules/
